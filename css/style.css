@@ -1,0 +1,97 @@
+
+:root{
+  --ms-light-grey: #f8f9fa;
+  --mas-darker-grey: #f7f7f7;
+  --ms-blue: #1b72e8;
+  --ms-darker-blue: #051e34;
+}
+
+
+/* DEBUG */
+
+
+/* UTILITIES */
+
+/* .ms_light_grey_bg{
+  background-color: var(--ms-light-grey);
+}
+
+.ms_darker_grey_bg{
+  background-color: var(--mas-darker-grey);
+}
+
+.ms_blue_bg{
+  background-color: var(--ms-blue);
+}
+
+.ms_darker_blue_bg{
+  background-color: var(--ms-darker-blue);
+} */
+
+header{
+  height: 4.5rem;
+  background-color: var(--ms-light-grey);
+}
+
+main{
+  height: calc(100vh - 4.5rem);
+}
+
+aside{
+  background-color: var(--ms-darker-blue);
+  width: 4.4rem;
+}
+
+.ms_content{
+  width: calc(100% - 4.4rem);
+  overflow-y: auto;
+}
+
+.ms_top_bar{
+  background-color: var(--ms-blue);
+  height: 16.4rem;
+}
+
+.ms_main_content{
+  background-color: var(--ms-light-grey);
+  height: calc(100% - 16.4rem);
+}
+
+
+
+/* MEDIA QUERIES */
+
+/* tablet */
+@media screen and (min-width: 768px) {
+  
+  .ms_top_bar{
+    height: 8.7rem;
+  }
+
+  .ms_main_content{
+    height: calc(100% - 8.7rem);
+  }
+
+}
+
+
+/* pc */
+@media screen and (min-width: 992px) {
+  
+  aside{
+    width: 9.4rem;
+  }
+
+  .ms_content{
+    width: calc(100% - 9.4rem);
+  }
+
+  .ms_top_bar{
+    height: 7.6rem;
+  }
+
+  .ms_main_content{
+    height: calc(100% - 7.6rem);
+  }
+
+}
