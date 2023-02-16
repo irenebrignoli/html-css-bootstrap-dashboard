@@ -18,17 +18,7 @@ body{
 
 /* DEBUG */
 
-.debug .box1{
-  height: 200px;
-  background-color: pink;
-  border: #000 dashed 1px;
-}
 
-.debug .box2{
-  height: 200px;
-  background-color: green;
-  border: #000 dashed 1px;
-}
 
 
 /* UTILITIES */
@@ -65,16 +55,8 @@ aside{
   background-color: var(--ms-darker-blue);
   width: 4.4rem;
   position: relative;
-}
-
-/* aside:before{
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
   background-image: url(../img/sidebar-bg.png);
-  filter: brightness(1);
-} */
+}
 
 .ms_top_sidebar{
   height: calc(100% - 6.25rem);
@@ -131,8 +113,17 @@ aside a:hover{
 
 /* offcanvas*/
 
+.ms_offcanvas{
+  width: 100% !important;
+} 
 
+.ms_offcanvas-dropd{
+  border: var(--ms-searchbar) 1px solid;
+}
 
+.ms_offcanvas-dropd:hover{
+  border: var(--ms-searchbar) 1px solid;
+}
 
 /* table*/
 
@@ -220,7 +211,7 @@ table td:nth-child(3){
     height: calc(100% - 8.7rem);
   }
 
-  .offcanvas{
+  .ms_offcanvas{
     width:60% !important;
   } 
 

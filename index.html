@@ -109,30 +109,103 @@
 
               <button type="button" class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
 
-              <div class="offcanvas offcanvas-end text-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas ms_offcanvas offcanvas-end text-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
 
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo utente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
 
+                <!-- offcanvas -->
                 <div class="offcanvas-body">
                   <form>
+
+                    <!-- row 1 -->
+                    <div class="mb-3 row g-3">
+
+                      <div class="col">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                      </div>
+
+                      <div class="col">
+                        <label for="surname" class="form-label">Cognome</label>
+                        <input type="text" class="form-control" id="surname" name="surname" required>
+                      </div>
+
+                    </div>
+
+                    <!-- row 2 -->
+                    <div class="mb-3 row g-3">
+
+                      <div class="col">
+                        <label for="email" class="form-label">Email</label>
+                        <div class="input-group">
+                          <span class="input-group-text" id="basic-addon1">@</span>
+                          <input type="email" class="form-control" id="email" name="email"required>
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="text" class="form-control" id="password" name="password" required>
+                      </div>
+
+                    </div>
+
+                    <!-- row 3 -->
                     <div class="mb-3">
-                      <label for="name" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
-                      <label for="name" class="form-label">Email address</label>
-                      <input type="email" class="form-control" id="name" aria-describedby="emailHelp">
+                      <label for="address" class="form-label">Indirizzo</label>
+                      <input type="text" class="form-control" id="address" name="address" required>
                     </div>
-                    <div class="mb-3">
-                      <label for="exampleInputPassword1" class="form-label">Password</label>
-                      <input type="password" class="form-control" id="exampleInputPassword1">
+
+                    <!-- row 4 -->
+                    <div class="mb-3 row g-3">
+
+                      <div class="col-6">
+                        <label for="city" class="form-label">Città</label>
+                        <input type="text" class="form-control" id="city" name="city" required>
+                      </div>
+
+                      <div class="col-4">
+                        <div class="dropdown">
+                          <label for="stato" class="form-label">Stato</label>
+                          <button class="btn ms_offcanvas-dropd w-100 text-secondary d-block bg-white dropdown-toggle text-start" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="stato">
+                            Scegli...
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Italia</a></li>
+                            <li><a class="dropdown-item" href="#">Francia</a></li>
+                            <li><a class="dropdown-item" href="#">Germania</a></li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div class="col-2">
+                        <label for="cap" class="form-label">CAP</label>
+                        <input type="text" class="form-control" id="cap" name="cap" required>
+                      </div>
+
                     </div>
-                    <div class="mb-3 form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+
+                    <!-- row 5 -->
+                    <div class="mb-4">
+                      <label for="foto" class="form-label">Foto</label>
+                      <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">Scegli file</span>
+                        <input type="text" class="form-control" id="foto" name="foto" placeholder="Nessun file selezionato">
+                      </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    
+                    <div class="form-check mb-4">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Seleziona per proseguire
+                      </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary me-2">Salva</button>
+                    <button type="reset" class="btn btn-warning">Svuota</button>
                   </form>
                 </div>
 
