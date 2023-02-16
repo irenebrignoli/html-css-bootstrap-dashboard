@@ -111,8 +111,7 @@ aside a:hover{
 
 /* table*/
 
-table th,
-table td{
+section .card{
   font-weight: 500;
   font-size: 0.8rem;
 }
@@ -155,6 +154,28 @@ table td:nth-child(3){
 }
 
 /* end - table*/
+
+#faq .accordion-button{
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+#faq .accordion-body{
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+/* #utenti-attivi .list-group{
+  border:rgba(255, 255, 255, 0.5) 1px solid;
+} */
+
+#utenti-attivi .card-title{
+  font-size: 1.1rem;
+}
+
+#utenti-attivi .card-text{
+  font-size: 0.8rem;
+}
 
 
 /* MEDIA QUERIES */
