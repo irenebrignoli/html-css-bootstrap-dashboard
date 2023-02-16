@@ -27,11 +27,6 @@ body{
   border: #000 dashed 1px;
 }
 
-.debug .ms_top_sidebar,
-.debug .ms_bottom_sidebar{
-  border: #fff 2px solid;
-}
-
 
 /* UTILITIES */
 
@@ -85,14 +80,14 @@ aside{
   position: relative;
 }
 
-aside:before{
+/* aside:before{
   content: "";
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
   background-image: url(../img/sidebar-bg.png);
   filter: brightness(1);
-}
+} */
 
 .ms_top_sidebar{
   height: calc(100% - 6.25rem);
@@ -104,6 +99,12 @@ aside:before{
 
 aside a{
   color: var(--ms-white);
+  padding: 0.3rem;
+}
+
+aside a:hover{
+  content:'';
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .ms_content{
@@ -135,7 +136,7 @@ aside a{
 
 /* tablet */
 @media screen and (min-width: 768px) {
-  
+
   .ms_top_bar{
     height: 8.7rem;
   }
@@ -149,13 +150,13 @@ aside a{
 
 /* pc */
 @media screen and (min-width: 992px) {
-  
+
   aside{
-    width: 9.4rem;
+    width: 9rem;
   }
 
   .ms_content{
-    width: calc(100% - 9.4rem);
+    width: calc(100% - 9rem);
   }
 
   .ms_top_bar{
