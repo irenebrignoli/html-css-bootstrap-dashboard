@@ -123,14 +123,15 @@ aside a:hover{
   padding: 0;
 }
 
-/* .ms_top_bar .badge.plus{
-  font-weight: ;
-} */
-
 .ms_main_content{
   background-color: var(--ms-light-grey);
   height: calc(100% - 16.4rem);
 }
+
+
+/* offcanvas*/
+
+
 
 
 /* table*/
@@ -189,10 +190,6 @@ table td:nth-child(3){
   font-size: 0.8rem;
 }
 
-/* #utenti-attivi .list-group{
-  border:rgba(255, 255, 255, 0.5) 1px solid;
-} */
-
 #utenti-attivi .card-title{
   font-size: 1.1rem;
 }
@@ -222,6 +219,10 @@ table td:nth-child(3){
   .ms_main_content{
     height: calc(100% - 8.7rem);
   }
+
+  .offcanvas{
+    width:60% !important;
+  } 
 
   table th:nth-child(2),
   table td:nth-child(2),
