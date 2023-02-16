@@ -3,6 +3,7 @@
   --ms-light-grey: #f8f9fa;
   --mas-darker-grey: #f7f7f7;
   --ms-blue: #1b72e8;
+  --ms-blue-badge: #165bba;
   --ms-darker-blue: #051e34;
   --ms-searchbar: #e5e5e5;
   --ms-white: #fff;
@@ -102,6 +103,29 @@ aside a:hover{
   background-color: var(--ms-blue);
   height: 16.4rem;
 }
+
+.ms_top_bar .badge{
+  background-color: var(--ms-blue-badge);
+  font-weight: 400;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+  color:var(--ms-white);
+}
+
+.breadcrumb-item .btn.plus{
+  font-weight: 400;
+  font-size: 0.6rem;
+  background-color: var(--ms-blue-badge);
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  padding: 0;
+}
+
+/* .ms_top_bar .badge.plus{
+  font-weight: ;
+} */
 
 .ms_main_content{
   background-color: var(--ms-light-grey);
