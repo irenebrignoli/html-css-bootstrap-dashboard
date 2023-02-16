@@ -6,6 +6,8 @@
   --ms-darker-blue: #051e34;
   --ms-searchbar: #e5e5e5;
   --ms-white: #fff;
+  --ms-red: #dc3545;
+  --ms-green: #198754;
 }
 
 body{
@@ -29,22 +31,6 @@ body{
 
 
 /* UTILITIES */
-
-/* .ms_light_grey_bg{
-  background-color: var(--ms-light-grey);
-}
-
-.ms_darker_grey_bg{
-  background-color: var(--mas-darker-grey);
-}
-
-.ms_blue_bg{
-  background-color: var(--ms-blue);
-}
-
-.ms_darker_blue_bg{
-  background-color: var(--ms-darker-blue);
-} */
 
 
 /* header */
@@ -123,6 +109,53 @@ aside a:hover{
 }
 
 
+/* table*/
+
+table th,
+table td{
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.ms_img_class{
+  width: 1.6rem;
+  width: 1.6rem;
+  border-radius: 50%;
+}
+
+table .ms_pen_button,
+table .ms_trash_button{
+  font-size: 0.8rem;
+}
+
+table .ms_pen_button:hover{
+  background-color: var(--ms-green);
+}
+
+table .ms_trash_button:hover{
+  background-color: var(--ms-red);
+}
+
+table th,
+table td{
+  width: 100px;
+}
+
+table th:first-child,
+table td:first-child{
+  text-align: left;
+  width: calc(100% - 200px);
+}
+
+table th:nth-child(2),
+table td:nth-child(2),
+table th:nth-child(3),
+table td:nth-child(3){
+  display: none;
+}
+
+/* end - table*/
+
 
 /* MEDIA QUERIES */
 
@@ -143,6 +176,19 @@ aside a:hover{
 
   .ms_main_content{
     height: calc(100% - 8.7rem);
+  }
+
+  table th:nth-child(2),
+  table td:nth-child(2),
+  table th:nth-child(3),
+  table td:nth-child(3){
+    display: table-cell;
+  }
+
+  table th:first-child,
+  table td:first-child{
+    text-align: left;
+    width: calc(100% - 400px);
   }
 
 }
